@@ -13,3 +13,4 @@ spec:
       - name: presyncjob
         image: busybox                 
         command: ["echo", "job-presync"]   
+      restartPolicy: Never
