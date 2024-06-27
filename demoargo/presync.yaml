@@ -11,5 +11,5 @@ spec:
     spec:
       containers:
      - name: presyncjob
-       image: busybox                 
-       command: ["echo", "job-presync"]   
+         image: busybox                 
+         command: ["echo", "job-presync"]   
