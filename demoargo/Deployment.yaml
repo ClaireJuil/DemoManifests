@@ -17,3 +17,12 @@ spec:
         image: 989988/demoapp:1.0.0
         ports:
         - containerPort: 8081
+      livenessProbe:
+        httpGet:
+          path: /healthz
+          port: 8081
+        httpHeaders:
+        - name: Custom-Header
+          value: Awesome
+        initialDelaySeconds: 3
+        periodSeconds: 3  
