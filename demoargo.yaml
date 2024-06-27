@@ -1,0 +1,11 @@
+project: default
+source:
+  repoURL: 'https://github.com/ClaireJuil/DemoManifests.git'
+  path: demoargo
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: demo
+syncPolicy:
+  automated:
+    selfHeal: true
