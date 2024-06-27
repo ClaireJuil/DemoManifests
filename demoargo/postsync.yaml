@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: jobpostsync-
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+spec:
+  template:
+    metadata:
+      name: job
+    spec:
+      containers:
+      - name: postsyncjob
+        image: busybox                 
+        command: ["echo", "L application a été synchronisée avec success"]   
+      restartPolicy: Never
