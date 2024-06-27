@@ -10,6 +10,6 @@ spec:
       name: job
     spec:
       containers:
-     - name: presyncjob
+      - name: presyncjob
          image: busybox                 
          command: ["echo", "job-presync"]   
