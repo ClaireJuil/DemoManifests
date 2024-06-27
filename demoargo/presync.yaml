@@ -6,8 +6,8 @@ metadata:
     argocd.argoproj.io/hook: PreSync
 spec:
   template:
-     metadata:
-       name: job-presync
+    metadata:
+      name: job-presync
     spec:
       containers:
      - name: presyncjob
