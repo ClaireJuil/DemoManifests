@@ -16,5 +16,5 @@ spec:
       - name: demo
         image: 989988/demoapp:1.0.0
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
    
