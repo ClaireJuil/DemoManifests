@@ -1,11 +1,13 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: schema-migrate-
+  name: jobpresync
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
   template:
+     metadata:
+       name: job-presync
     spec:
       containers:
      - name: presyncjob
