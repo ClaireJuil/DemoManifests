@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: jobkosync-
+  annotations:
+    argocd.argoproj.io/hook: SyncFail
+spec:
+  template:
+    metadata:
+      name: job
+    spec:
+      containers:
+      - name: postsyncjob
+        image: busybox                 
+        command: ["echo", "Oups... echec de la synchro"]   
+      restartPolicy: Never
