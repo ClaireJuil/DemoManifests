@@ -12,5 +12,5 @@ spec:
       containers:
       - name: presyncjob
         image: busybox                 
-        command: ["echo", "job-presync"]   
+        command: ["echo", "L application sera synchronisé avec un nouvel état désiré"]   
       restartPolicy: Never
